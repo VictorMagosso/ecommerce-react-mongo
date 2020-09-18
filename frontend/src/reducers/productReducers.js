@@ -24,5 +24,4 @@ function productDetailsReducer(state = { product:{} }, action) {
             return state;                
     }
 }
-
 export {productListReducer, productDetailsReducer};
