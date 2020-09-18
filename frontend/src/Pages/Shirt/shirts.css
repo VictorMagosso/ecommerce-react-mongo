@@ -1,0 +1,41 @@
+.container-shirts {
+    padding-top: 9em;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.container-shirts a{
+    text-decoration: none;
+    color: #333;
+}
+.item-shirts {
+    padding: 0.6em;
+    margin: 1em;
+    border: .3px solid rgb(224, 224, 224);
+    width: 220px;
+    height: 270px;
+}
+.product-image {
+    text-align: center;
+    width: 100%;
+    height: 120px;
+}
+.product-name {
+    text-align: center;
+    color: orangered;
+}
+.product-rating {
+    text-align: center;
+}
+.product-description {
+    font-size: 0.7em;
+}
+.product-price {
+    text-align: end;
+    margin-top: 30px;
+}
+.product-num-reviews {
+    color: rgb(153, 153, 153);
+    float: left;
+    margin-top: -27px;
+}

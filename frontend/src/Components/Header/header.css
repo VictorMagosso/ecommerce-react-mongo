@@ -1,0 +1,75 @@
+.container-header {
+    position: fixed;
+    top: 0;
+    box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.116);
+    padding: 0.3em;
+    background: rgb(250, 249, 249);
+    display: flex;
+    justify-content: space-around;
+}
+.container-header ul li {
+    padding: 0.7em;
+    list-style: none;
+    display: inline;
+}
+.container-header ul li a {
+    transition: 1s linear;
+    color: rgba(255, 68, 0, 0.555);
+    text-decoration: none;
+}
+.container-header ul li a:hover {
+    color: black;
+}
+.container-header ul {
+    margin-top: 2em;
+}
+.container-header button {
+    background: transparent;
+    border: none;
+    margin-left: -190px;
+}
+.container-header input[type="text"] {
+    width: 300px;
+    border: 0.7px solid rgba(255, 68, 0, 0.26);
+    border-radius: 50px;
+    padding: 10px;
+    height: 50px;
+    margin-top: 1em;
+}
+.submenu {
+    background: rgb(248, 248, 248);
+    width: 100vw;
+    position: fixed;
+    transform: translateY(-90em);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.submenu.open {
+    transition: all .5s;
+    transform: translateY(6em);
+}
+.submenu li {
+    list-style: none;
+}
+.title-submenu {
+    padding: 0.3em;
+    font-size: 1.2em;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.103);
+}
+.title-submenu a {
+    color: rgba(255, 68, 0, 0.555);
+    text-decoration: none;
+}
+.item-submenu a {
+    transition: 1s linear;
+    text-decoration: none;
+    color: #333;
+}
+.item-submenu {
+    padding: .3em;
+    transition: .5s linear;
+}
+.item-submenu:hover {
+    background: rgba(255, 68, 0, 0.555);
+}

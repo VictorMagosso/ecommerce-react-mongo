@@ -1,0 +1,21 @@
+.container-product-item {
+    margin-left: 10em;
+    padding-top: 8em;
+}
+.product-name-open {
+    font-weight: 100;
+    border-bottom: 1px solid grey;
+    font-size: 4em;
+}
+.product-price-open {
+    font-weight: 100;
+    font-size: 3em
+}
+.product-rating-open {
+    font-weight: 100;
+    font-size: 2.4em
+}
+.product-description-open {
+    font-weight: 100;
+    font-size: 1.4em
+}

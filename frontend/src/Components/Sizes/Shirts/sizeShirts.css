@@ -1,0 +1,9 @@
+.select-size-shirt {
+    border: 1px solid rgba(0, 0, 0, 0.384);
+    border-radius: 14px;
+    width: 4em;
+    height: 2em;
+}
+.select-size-shirt option::shadow {
+    box-shadow: none;
+}

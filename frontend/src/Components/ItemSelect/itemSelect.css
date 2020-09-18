@@ -1,0 +1,38 @@
+.item-select input[type=number] {
+	width: 120px;
+    border: 1px solid rgba(0, 0, 0, 0.384);
+    border-radius: 12px;
+    padding: 0.4em;
+}
+.item-select input[type=number]::-webkit-inner-spin-button { 
+    all: unset; 
+    min-width: 21px;
+    min-height: 45px;
+    margin: 17px;
+    padding: 0px;
+    background-image: 
+    linear-gradient(to top, transparent 0px, transparent 16px, #fff 16px, #fff 26px, transparent 26px, transparent 35px, #000 35px,#000 36px,transparent 36px, transparent 40px),
+    linear-gradient(to right, transparent 0px, transparent 10px, #000 10px, #000 11px, transparent 11px, transparent 21px);
+    transform: rotate(90deg) scale(0.8, 0.9);
+    cursor:pointer;
+}
+.item-select a {
+    color: rgb(64, 211, 84);
+    font-size: 1.4em;
+    text-decoration: none;
+}
+.item-select {
+    margin-top: 2em;
+    display: inline-block;
+    width: 100%;
+}
+.add-to-cart {
+    text-align: center;
+    padding: .5em;
+    border:1px solid rgb(64, 211, 84);
+    margin-top: 2em;
+    width: 100%;
+}
+.add-to-cart:hover {
+    box-shadow: 1px 1px 20px 1px rgb(155, 223, 146);
+}
