@@ -9,8 +9,7 @@ import './productScreen.css';
 import { useDispatch, useSelector } from 'react-redux';
 
 function ProductScreen(props) {
-       
-    const productDetails = useSelector(state => state.productDetails);
+    const productDetails = useSelector((state) => state.productDetails);
     const { product, loading, error } = productDetails;
     // const product = data.products.find(x => x._id === props.match.params.id)
     

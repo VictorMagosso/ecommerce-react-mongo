@@ -9,7 +9,6 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { Provider } from 'react-redux';
 
 ReactDOM.render(
-  <React.StrictMode>
     <Provider store={store}>
     <BrowserRouter>
     <Switch>
@@ -18,7 +17,6 @@ ReactDOM.render(
     <Route path='/camisetas-todos-os-itens' component={Shirts}/>
     </Switch>
     </BrowserRouter>
-    </Provider>
-  </React.StrictMode>,
+    </Provider>,
   document.getElementById('root')
 );
