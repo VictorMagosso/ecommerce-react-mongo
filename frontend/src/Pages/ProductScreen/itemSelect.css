@@ -16,7 +16,9 @@
     transform: rotate(90deg) scale(0.8, 0.9);
     cursor:pointer;
 }
-.item-select a {
+.item-select button {
+    background: transparent;
+    border: none;
     color: rgb(64, 211, 84);
     font-size: 1.4em;
     text-decoration: none;

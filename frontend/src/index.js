@@ -7,6 +7,7 @@ import Shirts from './Pages/Shirt/shirts';
 import ProductScreen from './Pages/ProductScreen/productScreen';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { Provider } from 'react-redux';
+import Cart from './Pages/Cart/cart';
 
 ReactDOM.render(
     <Provider store={store}>
@@ -15,6 +16,7 @@ ReactDOM.render(
     <Route exact path='/' component={App}/>
     <Route path='/produto/:id' component={ProductScreen}/>
     <Route path='/camisetas-todos-os-itens' component={Shirts}/>
+    <Route path='/carrinho/:id?' component={Cart}/>
     </Switch>
     </BrowserRouter>
     </Provider>,

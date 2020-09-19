@@ -7,6 +7,7 @@ import './shirts.css';
 import { useDispatch, useSelector } from 'react-redux';
 
 function Shirts (props) {
+        
     const productList = useSelector(state => state.productList);
     const {products, loading, error} = productList;
     const dispatch = useDispatch();
@@ -16,14 +17,17 @@ function Shirts (props) {
             //
         };
     }, []);
-
+    const isUnavailable = (params) => {
+        if (params === 0)
+        return alert('INDISP')
+    }
 return loading? <div>Carregando</div> :
 error? <div>{error}</div> :
 <PageDefault>
     <div className='container-shirts'>
         {
         products.map(product => 
-            <div key={product._id}>
+            <div onLoadStart={isUnavailable(product.countInStock)} key={product._id}>
             <Link to={`/produto/${product._id}`}>
             <div className='item-shirts'>
                 <div className='product-image'>
@@ -38,7 +42,8 @@ error? <div>{error}</div> :
             </Link>
             </div>
             )
-        }
+
+                    }
     </div>
 </PageDefault>
 }

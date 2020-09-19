@@ -1,11 +1,10 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { detailsProduct } from '../../actions/productActions';
 import PageDefault from '../PageDefault/pagedefault';
 import SizeShirts from '../../Components/Sizes/Shirts/sizeShirts';
-import data from '../../data';
-import ItemSelect from '../../Components/ItemSelect/itemSelect';
 
 import './productScreen.css';
+import './itemSelect.css';
 import { useDispatch, useSelector } from 'react-redux';
 
 function ProductScreen(props) {
@@ -21,7 +20,10 @@ function ProductScreen(props) {
             //
         };    
     }, []);
- 
+    const [qtd, setQtd] = useState(1);
+    const handleAddToCart = () => {
+        props.history.push('/carrinho/' + props.match.params.id + '?qtd=' + qtd)
+    }
     
     return loading? <div>Carregando</div> : 
     error? <div>{error}</div> :
@@ -36,7 +38,15 @@ function ProductScreen(props) {
             <h3 className='product-rating-open'>{product.rating}</h3>
             <h4 className='product-description-open'>{product.description}</h4>
             <SizeShirts/>
-            <ItemSelect/>
+            <div className='item-select'>
+            <h5>Quantidade:</h5>
+            <input value={qtd} onChange={e => {setQtd(e.target.value)}} min='0' max='8' type="number"/>
+            <div className='add-to-cart'>
+            <button onClick={handleAddToCart}>Adicionar ao carrinho
+                <i className='fas fa-shopping-cart'></i>
+            </button> 
+        </div>                          
+       </div>
         </div>
     </div>            
 </PageDefault>

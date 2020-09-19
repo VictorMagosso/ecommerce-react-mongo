@@ -8,8 +8,8 @@ export default {
             price: 109.90,
             rating: 4.5,
             numReviews: 10,
-            category: 'LongShirts'
-
+            category: 'LongShirts',
+            countInStock: 20
         },
         {
             _id: 2,
@@ -19,8 +19,8 @@ export default {
             price: 229.90,
             rating: 4.2,
             numReviews: 8,
-            category: 'LongShirts'
-
+            category: 'LongShirts',
+            countInStock: 20
         },
         {
             _id: 3,
@@ -30,8 +30,8 @@ export default {
             price: 69.90,
             rating: 4.5,
             numReviews: 10,
-            category: 'ShortShirts'
-
+            category: 'ShortShirts',
+            countInStock: 20
         },
         {
             _id: 4,
@@ -41,8 +41,8 @@ export default {
             price: 79.90,
             rating: 4.5,
             numReviews: 10,
-            category: 'ShortShirts'
-
+            category: 'ShortShirts',
+            countInStock: 20
         },
         {
             _id: 5,
@@ -52,8 +52,8 @@ export default {
             price: 79.90,
             rating: 4.5,
             numReviews: 10,
-            category: 'ShortShirts'
-
+            category: 'ShortShirts',
+            countInStock: 20
         },
         {
             _id: 6,
@@ -63,8 +63,8 @@ export default {
             price: 79.90,
             rating: 4.5,
             numReviews: 10,
-            category: 'ShortShirts'
-
+            category: 'ShortShirts',
+            countInStock: 20
         },
         {
             _id: 7,
@@ -74,8 +74,8 @@ export default {
             price: 79.90,
             rating: 4.5,
             numReviews: 10,
-            category: 'ShortShirts'
-
+            category: 'ShortShirts',
+            countInStock: 20
         },
         {
             _id: 8,
@@ -85,8 +85,8 @@ export default {
             price: 79.90,
             rating: 4.5,
             numReviews: 10,
-            category: 'ShortShirts'
-
+            category: 'ShortShirts',
+            countInStock: 20
         },
         {
             _id: 9,
@@ -96,8 +96,8 @@ export default {
             price: 79.90,
             rating: 4.5,
             numReviews: 10,
-            category: 'ShortShirts'
-
+            category: 'ShortShirts',
+            countInStock: 20
         },
         {
             _id: 10,
@@ -107,8 +107,8 @@ export default {
             price: 79.90,
             rating: 4.5,
             numReviews: 10,
-            category: 'ShortShirts'
-
+            category: 'ShortShirts',
+            countInStock: 20
         },
             ]
 }
