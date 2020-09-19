@@ -1,0 +1,47 @@
+.cart {
+    height: 100vh;
+    width: 70vw;
+    margin-top: 10em;
+}
+.cart ul {
+    list-style: none;
+}
+.cart-item {
+    border: .2px solid rgba(128, 128, 128, 0.205);
+    height: 7em;
+    margin-top: .5em;
+}
+.cart-image {
+    border: 1px solid red;
+    width: 7em;
+    height: 7em;
+}
+.cart-name {
+    display: inline;
+    margin-left: 1em;
+}
+.cart-price {
+    display: inline;
+    margin-left: 2em;
+}
+.cart-qtd {
+    margin-left: 1em;
+    width: 5em;
+}
+.cart-actions {
+    background: rgb(255, 255, 255);
+    border: .2px solid rgba(128, 128, 128, 0.205);
+    height: 50vh;
+    position: fixed;
+    right: 2em;
+    top: 10em;
+}
+.cart-actions button{
+    background: rgb(247, 109, 59);
+    width: 100%;
+    bottom: 0px;
+    padding: .6em;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}

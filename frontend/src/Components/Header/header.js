@@ -27,7 +27,7 @@ const Header = () => {
             </button>
             </li>
             <li>
-            <Link to='/cart'>
+            <Link to='/carrinho/:id?'>
                 <i className='fas fa-shopping-cart'></i>
             </Link>
             </li>
