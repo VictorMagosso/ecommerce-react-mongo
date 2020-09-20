@@ -24,7 +24,7 @@ function ProductScreen(props) {
         props.history.push('/carrinho/' + props.match.params.id + '?qtd=' + qtd)
     }
     
-    return loading? <div>Carregando</div> : 
+    return loading ? <div>Carregando</div> : 
     error? <div>{error}</div> :
     <PageDefault>
         <div className='container-product-item row'>
