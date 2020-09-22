@@ -33,7 +33,7 @@ const Header = () => {
             </li>
             
             <li>
-            <Link to='/cart'>
+            <Link to='/signin'>
                 Login
             </Link>
             </li>

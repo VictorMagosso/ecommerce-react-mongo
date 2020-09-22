@@ -8,6 +8,7 @@ import ProductScreen from './Pages/ProductScreen/productScreen';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import Cart from './Pages/Cart/cart';
+import SignIn from './Pages/SignIn/signin';
 
 ReactDOM.render(
     <Provider store={store}>
@@ -17,6 +18,7 @@ ReactDOM.render(
     <Route path='/produto/:id' component={ProductScreen}/>
     <Route path='/camisetas-todos-os-itens' component={Shirts}/>
     <Route path='/carrinho/:id?' component={Cart}/>
+    <Route path='/signin' component={SignIn}/>
     </Switch>
     </BrowserRouter>
     </Provider>,
