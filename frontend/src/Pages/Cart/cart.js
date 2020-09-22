@@ -24,30 +24,31 @@ const Cart = (props) => {
     }, []);
     const [updatedQtd, setUpdatedQtd] = useState(qtd);
 console.log(cart)
+console.log(cartItems)
 return (
         <PageDefault>
             <div className='cart'>
             <ul>
-                        {
-                            cartItems.length === 0 ? 
-                            <div>O carrinho está vazio!</div>
-                            :
-                            cartItems.map(item => 
-                                <div key={item}>
-                                <li className='cart-item'>
-                                    <img className='cart-image' src={item.image}/>
-                                    <Link to={'/produto/' + productId}>
-                                        <h4 className='cart-name'>{item.name}</h4>
-                                    </Link>
-                                    <h4 className='cart-price'>R$ {item.price}</h4>
-                                    <small>Unidade</small>
-                                    <input min='0' onChange={e => setUpdatedQtd(e.target.value)} className='cart-qtd' value={qtd} type='number'/>
-                                    <h4 className='cart-price'>R$ {(item.price*item.qtd).toFixed(2)}</h4>
-                                    <button onClick={() => removeFromCartHandler(item.product)}>Remover</button>
-                                </li>
-                                </div>
-                            )
-                        }
+                {
+                    cartItems.length === 0 ? 
+                    <div>O carrinho está vazio!</div>
+                    :
+                    cartItems.map(item => 
+                        <div key={item}>
+                        <li className='cart-item'>
+                            <img className='cart-image' src={item.image}/>
+                            <Link to={'/produto/' + productId}>
+                                <h4 className='cart-name'>{item.name}</h4>
+                            </Link>
+                            <h4 className='cart-price'>R$ {item.price}</h4>
+                            <small>Unidade</small>
+                            <input min='0' onChange={e => setUpdatedQtd(e.target.value)} className='cart-qtd' value={qtd} type='number'/>
+                            <h4 className='cart-price'>R$ {(item.price*item.qtd).toFixed(2)}</h4>
+                            <button onClick={() => removeFromCartHandler(item.product)}>Remover</button>
+                        </li>
+                        </div>
+                    )
+                }
                     </ul>
             <div className='cart-actions col-4'>
                 <h5>Subtotal ({cartItems.reduce((a, c) => a + c.qtd, 0)} itens)</h5>
@@ -58,4 +59,5 @@ return (
         </PageDefault>
     )
 }
+
 export default Cart;
